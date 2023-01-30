@@ -26,26 +26,4 @@ export default {
 .logoNetflix {
   width: 20em;
 }
-
-h1 {
-  color: white;
-}
-
-.conteudoMain {
-  display: flex;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  width: 80%;
-}
-
-.navabarLateral {
-  width: 5em;
-  height: 27em;
-}
-
-.conteudoCentral {
-  width: 25em;
-  height: 27em;
-  background-color: #F6F6F6;
-}
 </style>
