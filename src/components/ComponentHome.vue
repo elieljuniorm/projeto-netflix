@@ -65,7 +65,6 @@ h1 {
   text-align: center;
   position: relative;
   text-decoration: none;
-  vertical-align: middle;
   float: left;
 
 }
