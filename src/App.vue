@@ -39,9 +39,9 @@ html body {
 }
 
 a {
-  color: currentColor;
-  text-decoration: unset;
-  cursor: pointer;
+  color: currentColor !important;
+  text-decoration: unset !important;
+  cursor: pointer !important;
 }
 
 li {
