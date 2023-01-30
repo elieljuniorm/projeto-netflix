@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container mt-3">
     <!-- filtro -->
-    <b-form inline>
+    <b-form inline class="search">
 
       <b-form-input id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0 colorInput" placeholder="Nome do filme"
         v-model="search" />
@@ -14,9 +14,9 @@
 
     </b-form>
 
-    <b-row>
+    <b-row class="tabelaMain">
 
-      <b-col md="6" sm="12" class="tabela">
+      <b-col md="6" sm="12" class="tabelaCor">
         <!-- tabela -->
         <b-table class="mt-3" striped hover :items="filteredItems" :fields="fields">
         </b-table>
@@ -1794,13 +1794,57 @@ export default {
 </script>
 
 <style>
-.tabela {
+.search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.tabelaCor {
   color: white !important;
+}
+
+.tabelaMain {
+  max-width: 100%;
 }
 
 .colorInput,
 .colorSelect {
   color: #f8f9fa !important;
   background: #212529 !important;
+  border-radius: 5px;
+  padding: .6em;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  color: white !important;
+}
+
+.colorInput {
+  width: 10em !important;
+}
+
+@media only screen and (max-width: 599px) {
+  .search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-direction: column;
+  }
+
+  .colorInput,
+  .colorSelect {
+    width: auto !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tabelaCor {
+    width: auto !important;
+  }
 }
 </style>
