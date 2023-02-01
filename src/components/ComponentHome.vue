@@ -17,7 +17,7 @@
 
     <div class="containerResumo">
       <article class="conteudoResumo">
-        <span class="titulo">Resumo</span>
+        <span class="titulo">Apresentação</span>
         <p class="resumo">
           O trabalho trará uma analise da plataforma de streaming Netflix para entender se as produções audiovisuais
           estão sendo disponibilizadas com acessibilidade as Pessoas com Deficiência Visual e assim garantindo ao
