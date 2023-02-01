@@ -37,6 +37,7 @@ export default {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  line-height: 1.5;
 }
 
 html body {
