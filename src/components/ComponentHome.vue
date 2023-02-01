@@ -15,6 +15,23 @@
       </a>
     </div>
 
+    <div class="containerResumo">
+      <article class="conteudoResumo">
+        <span class="titulo">Resumo</span>
+        <p class="resumo">
+          O trabalho trará uma analise da plataforma de streaming Netflix para entender se as produções audiovisuais
+          estão sendo disponibilizadas com acessibilidade as Pessoas com Deficiência Visual e assim garantindo ao
+          usuário com deficiência visual em ter inclusão social e cultural por meio da plataforma. Busca entender se a
+          garantia de usuário é assegurada pela Netflix ao entender a diversidade de público pagadora desse serviço e
+          como as politicas de inclusão estão lidando com a diversidade. A pesquisa é realizada por meio de uma pesquisa
+          bibliográfica e um estudo de caso sobre a Netflix e a acessibilidade aos deficientes visuais. Originando um
+          resultado sobre o quantitativo de títulos que estão disponibilizados com audiodescrição e a comparação com a
+          quantidade de títulos que a plataforma possui atualmente. Fazendo entender que esses dados são rotativos, pois
+          a Netflix muda constantemente seus filmes e séries colocando ou retirando títulos de seu catálogo.
+        </p>
+      </article>
+    </div>
+
     <MainContent />
 
   </div>
@@ -34,6 +51,10 @@ export default {
 .containerHome {
   display: grid;
   align-items: center;
+}
+
+.logoNetflix {
+  width: 20em;
 }
 
 h1 {
@@ -109,12 +130,26 @@ h1 {
   transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/*Adicione esta classe se for usar 2 Botões*/
-.margin-right {
-  margin-right: 10px;
+.containerResumo {
+  text-align: center;
+  width: 80%;
 }
 
-.logoNetflix {
-  width: 20em;
+.titulo {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.resumo {
+  text-align: justify;
+  padding: 1em 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1024px)  {
+  .containerResumo {
+    max-width: 80vh;
+  }
 }
 </style>

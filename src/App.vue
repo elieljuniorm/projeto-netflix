@@ -1,14 +1,19 @@
 <template>
-  <ComponentHome />
+  <div>
+    <ComponentHome />
+    <ComponentFooter/>
+  </div>
 </template>
 
 <script>
 import ComponentHome from './components/ComponentHome.vue'
+import ComponentFooter from './components/ComponentFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    ComponentHome
+    ComponentHome,
+    ComponentFooter
   }
 }
 </script>
