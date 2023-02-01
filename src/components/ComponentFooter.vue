@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .footerContainer {
-    padding: 3em 0 2em 0;
+    padding: 3em 4em;
     background-color: #1a202c;
     width: 100%;
     margin-top: 2em;
